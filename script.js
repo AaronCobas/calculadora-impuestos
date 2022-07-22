@@ -29,6 +29,15 @@ switch(opcionUsuario){
             }while(isNaN(numeroOnline))
             alert(`El precio final con los Impuestos por compras en línea es de ${calculadoraImpuestoOnline(numeroOnline)}`)
             break
+            case "impuesto por compras en linea":
+                do{
+                    numeroOnline = parseFloat(prompt("Ingrese un número"))
+                    if( isNaN (numeroOnline)){
+                        alert("Por favor, ingrese un número válido")
+                    }
+                }while(isNaN(numeroOnline))
+                alert(`El precio final con los Impuestos por compras en línea es de ${calculadoraImpuestoOnline(numeroOnline)}`)
+                break
             default: alert("Opción no válida")
 }
 continuar = prompt("¿Desea realizar otra operación?").toLowerCase()
